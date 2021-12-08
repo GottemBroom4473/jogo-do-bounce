@@ -5,11 +5,11 @@ var music;
 
 function preload(){
     // carregue o som aqui
-    music = loadSound("music.mp3",musica);
+    music = loadSound("music.mp3");
 }
 
 function setup(){
-    tela = createTela(800,600);
+    tela = createCanvas(800,600);
 
     bloco1 = createSprite(0,580,200,30);
     bloco1.shapeColor = "blue";
@@ -32,7 +32,7 @@ function setup(){
 
 function draw() {
     background(rgb(169,169,169));
-    arestas=createArestasprites();
+    arestas = createEdgeSprites();
     bola.bounceOff(arestas);
 
     
