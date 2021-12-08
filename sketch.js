@@ -45,7 +45,8 @@ function draw() {
 
     if(bloco2.isTouching(bola)){
         bola.shapeColor = "orange";
-        bola.velocityX = 0
+        bola.velocityX = 0;
+        bola.velocityY = 0;
         music.play();
     }
 
